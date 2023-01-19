@@ -12,6 +12,8 @@
         box-sizing: border-box;
     }
 
+   
+
     .container{
         display: flex;
         width: 100%;
@@ -67,6 +69,12 @@
         font-size: 20px;
         background-color: #fff;
         border-radius: 20px;
+    }
+
+    .headline{
+        margin-left: 40%;
+        color: darkred;
+        font-size: 3rem;
     }
 
     .About h1{
