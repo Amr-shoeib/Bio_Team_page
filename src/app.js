@@ -1,8 +1,14 @@
 const express = require('express');
 const app = express()
 
+app.set('view engine', 'hbs');
+
+
 app.get('/', function (req, res) {
-  res.send('<h1>Hello World from home page</h1>')
+  res.render('index',{
+    title:"Home",
+    name: "Amr"
+  })
 })
 
 app.get('/about', function (req, res) {
