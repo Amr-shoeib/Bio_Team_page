@@ -1,0 +1,16 @@
+
+<!-- partials are always snippets of the code that defines a peice of "view"-->
+<!--these are rendered via route handleer into layout.hbs and injected into the
+ {{{ body }}} template-->
+
+
+<section class="team-member-section">
+
+
+<h1>{{ person.name }}</h1>
+<h2> {{ person.role }}</h2>
+<p> Team members name</p>
+
+<!-- a bio image or something-->
+<img src="/images/{{person.avatar}}" alt="{{person.name}}'s avatar">
+</section>
