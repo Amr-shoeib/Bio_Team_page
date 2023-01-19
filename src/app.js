@@ -1,5 +1,7 @@
+const path = require('path');
 const express = require('express');
-const app = express()
+const app = express();
+const publicDirectoryPath = path.join(__dirname, '../Public');
 
 app.set('view engine', 'hbs');
 
