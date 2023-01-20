@@ -12,8 +12,6 @@
         box-sizing: border-box;
     }
 
-   
-
     .container{
         display: flex;
         width: 100%;
@@ -32,6 +30,7 @@
         padding: 30px 30px;
         border-radius: 20px;
     }
+    
 
     .box img{
         border-radius: 50%;
@@ -55,10 +54,13 @@
         cursor: pointer;
         margin: 10px;
         font-size: 40px;
+        
     }
 
     .box ul li i:hover{
         opacity: 0.6;
+                text-decoration: none;
+
     }
 
     .About{
@@ -73,7 +75,7 @@
 
     .headline{
         margin-left: 40%;
-        color: darkred;
+        color: rgb(0, 19, 139);
         font-size: 3rem;
     }
 
@@ -86,10 +88,13 @@
 
     .About ul li{
         list-style: none;
+        
+
     }
 
     .About ul{
         margin-top: 20px;
+        
     }
 
     @media screen and (max-width: 1068px) {

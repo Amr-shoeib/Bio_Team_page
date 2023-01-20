@@ -14,9 +14,30 @@ app.get('/', function (req, res) {
   })
 })
 
-app.get('/about', function (req, res) {
-    res.send('<h1>Hello from about page</h1>');
+app.get('/layout', function (req, res) {
+    res.render('layout',{
+      title:"Justin",
+      name: "Justin"
+    })
   })
+
+  app.get('/Joe', function (req, res) {
+    res.render('Joe',{
+      title:"Joe",
+      name: "Joe"
+    })
+  })
+
+  app.get('/justin', function (req, res) {
+    res.render('justin',{
+      title:"Justin",
+      name: "Justin"
+    })
+  })
+
+  
+
+
 
 app.listen(3000, () => {
     console.log (" The server is runing on port 3000");
