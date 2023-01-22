@@ -12,6 +12,22 @@
         box-sizing: border-box;
     }
 
+    nav{
+    background-color: #0d1425;
+    padding: 10px;
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        margin-left: 300px;
+        
+    }
+
+    a:hover {
+       color: rgb(255, 170, 0);
+      }
+
     .container{
         display: flex;
         width: 100%;
@@ -75,7 +91,7 @@
 
     .headline{
         margin-left: 40%;
-        color: rgb(0, 19, 139);
+        color:rgb(49, 49, 49);
         font-size: 3rem;
     }
 
