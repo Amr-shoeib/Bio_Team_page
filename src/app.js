@@ -9,22 +9,22 @@ app.set('view engine', 'hbs');
 
 app.get('/', function (req, res) {
   res.render('index',{
-    title:"Team page",
+    title:"Team Page",
     name: "Amr"
   })
 })
 
-app.get('/layout', function (req, res) {
-    res.render('layout',{
-      title:"Justin",
-      name: "Justin"
-    })
-  })
+// app.get('/layout', function (req, res) {
+//     res.render('layout',{
+//       title:"layout",
+//       name: "layout"
+//     })
+//   })
 
-  app.get('/Joe', function (req, res) {
-    res.render('Joe',{
-      title:"Joe",
-      name: "Joe"
+  app.get('/joe', function (req, res) {
+    res.render('joe',{
+      title:"joe",
+      name: "joe"
     })
   })
 

@@ -9,27 +9,35 @@ let team = {
     image : 'justin.jpeg'
   },
 
-  Joe: {
+  joe: {
     name : 'Joe',
     role : '3D motion designer',
   },
 
-  Amr: {
+  amr: {
     name : 'Amr',
-    role : ' Graphicdesigner',
+    role : ' Graphic designer',
   },
 
 }
 
 
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get('/index', function(req, res) {
   res.render('index', { title: 'Express',
 content: 'express is easy!' });
 });
-router.get('/team/:member', function(req, res) {
+
+router.get('/justin', function(req, res) {
   console.log(req.params.member);
-  res.render('team', { person: team[req.params.member]});
+  res.render('justin', { person: team[req.params.member]});
 
 })
+
+router.get('/joe', function(req, res) {
+  console.log(req.params.member);
+  res.render('joe', { person: team[req.params.member]});
+
+})
+
 module.exports = router;
